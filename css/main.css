@@ -48,6 +48,10 @@
     padding: 5px;
 }
 
+.main-links .fa-solid {
+    padding: 10px 5px;
+}
+
 .icons {
     margin: 0.5rem;
 }
@@ -59,13 +63,13 @@
 
 .main-links>ul>li:hover {
     border-color: #fa0;
-    transition: 0.5s;
+    transition: 0.5s ease-out;
 }
 /* banner */
 .banner {
     width: 100vw;
     height: 90vh;
-    background: url(../images/banner1.jpg) center/contain;
+    background: url(../images/banner3.jpg) center/contain;
     position: relative;
 }
 
@@ -81,7 +85,7 @@
     font-weight: bolder;
     border: 1px solid #fa0;
     position: absolute;
-    left: 1rem;
+    right: 1rem;
     top: 1rem;
 }
 
@@ -121,6 +125,7 @@
     line-height: 40px;
     border-radius: 45px 0 0 45px;
     color: #000;
+    padding-left: 0.5rem;
 }
 
 .search-btn {
@@ -136,11 +141,69 @@
 }
 
 .search-btn:hover {
-    background-color: #fa0;
+    background-color: #ffaa00;
     transition: 0.3s linear;
 }
 
 /* blogs */
+
+.blogs {
+    background: #edd;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.heading-lvl-1{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    height: 100%;
+    width: 5rem
+}
+
+.cards {
+    /* height: 25vh;
+    width: 20vh; */
+    display: inline-flex;
+    flex-direction: column;
+    border:1px solid red;
+    margin: 10px;
+}
+
+.movie-poster {
+    /* width: 20vh;
+    height: 25vh;
+    border: 1px sol
+    id red; */
+}
+
+.poster {
+    width: 20vh;
+    height: 25vh;
+    object-fit: cover;
+    
+}
+
+.movie-title {
+    color: #000;
+    text-transform: capitalize;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+.post-button {
+    color: #000;
+}
 
 /* footer */
 
@@ -157,15 +220,37 @@
     margin: 1rem;
 }
 
+.socials>a>.fa-brands:hover,
+.foot-links>li>a:hover {
+    color: #0ff;
+    transition: 0.3s ease-in;
+}
+
 .foot-links {
     display: flex;
     list-style: none;
     line-height: 2rem;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     width: 40vw;
     flex-wrap: wrap;
 }
 
 .foot-links li {
+    display: inline-block;
+    margin: auto;
     padding: 0.5rem;
+}
+
+.foot-links li a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.company {
+    font-size: large;
+}
+
+.company::before {
+content: "a ";
+text-transform: capitalize;
 }
