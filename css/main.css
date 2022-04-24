@@ -44,7 +44,7 @@
 .main-links>ul>li>a {
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;;
+    letter-spacing: 0.1rem;
     padding: 5px;
 }
 
@@ -114,11 +114,12 @@
     bottom: 40%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(72, 71, 71, 0.9);
     width: 60%;
     height: 5rem;
     border-radius: 45px;
 }
+
 
 .search-text {
     width: 80%;
@@ -148,12 +149,13 @@
 /* blogs */
 
 .blogs {
-    background: #edd;
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    position: relative;
+    margin-top: 2px;
+    /* width: 100vw;
+    height: minmax (60vh,auto); */
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 5rem calc(100vw - 5rem);
+    grid-template-rows: minmax(60vh,auto);
 }
 
 .heading-lvl-1{
@@ -161,49 +163,36 @@
     text-orientation: upright;
     text-transform: uppercase;
     font-size: 2.8rem;
-    position: absolute;
-    left: 0;
     color: #fff;
     background-color: #000;
     text-align: center;
-    height: 100%;
-    width: 5rem
+    height: inherit;
 }
 
-.cards {
-    /* height: 25vh;
-    width: 20vh; */
-    display: inline-flex;
-    flex-direction: column;
-    border:1px solid red;
-    margin: 10px;
+.blog-container-grid {
+    background: linear-gradient(#a58,#315);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px 10px;
 }
 
-.movie-poster {
-    /* width: 20vh;
-    height: 25vh;
-    border: 1px sol
-    id red; */
+.blog-container-grid-items {
+    place-self: center center;
+    border :1px solid transparent;
+    border-radius: 20px;
 }
 
-.poster {
-    width: 20vh;
-    height: 25vh;
-    object-fit: cover;
-    
+.card {
+    display: grid;
+    grid-template-columns: minmax(200px,1fr);
 }
 
-.movie-title {
-    color: #000;
-    text-transform: capitalize;
-    font-size: larger;
-    font-weight: bold;
-    text-align: center;
+.card>img {
+    width: 100%;
+    height: auto;
 }
 
-.post-button {
-    color: #000;
-}
+/* cards transitions */
 
 /* footer */
 
@@ -213,6 +202,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 2px;
 }
 
 .foot .fa-brands {
