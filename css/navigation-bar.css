@@ -1,0 +1,67 @@
+.navigation-bar {
+    /* background: linear-gradient(#000, #000); */
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 1.2rem;
+    font-size: 2rem;
+}
+
+.logo-text {
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-family: 'open sans', sans-serif;
+}
+
+.logo-text:hover,
+.logo .fa-feather-pointed:hover {
+    transition: 0.6s linear;
+    color :#fa0;
+}
+
+.main-links>ul {
+    width: 50vw;
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: 'open sans', sans-serif;
+}
+
+.main-links>ul>li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.main-links .fa-solid {
+    padding: 10px 5px;
+}
+
+.icons {
+    margin: 0.5rem;
+}
+
+.main-links>ul>li {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.main-links>ul>li:hover {
+    border-color: #fa0;
+    transition: 0.4s ease-out;
+}
