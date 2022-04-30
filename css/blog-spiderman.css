@@ -6,20 +6,24 @@
     margin: 0;
     box-sizing: border-box;
     color: #fff;
-    background: #000;
+    /* background: #000; */
     /* border: 1px solid #fff; */
 }
 
 .container {
     display: grid;
     grid-template-columns: 5vw 2fr 1fr 5vw;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto uato auto;
     grid-template-areas: 
         "navi navi navi navi"
         ". arti auth ."
         ". arti . ."
+        ". sub sub ."
         "ft ft ft ft";
+        background: #000;
 }
+
+
 
 .navigation-bar {
     grid-area: navi;
@@ -30,6 +34,8 @@
     grid-area: arti;
     padding: 2px;
     margin-bottom: 100px;
+    border: 1px solid #fff;
+    border-left: none;
 }
 
 .heading {
@@ -64,8 +70,9 @@
     /* letter-spacing: 0.2rem; */
     word-spacing: 0.3rem;
     text-align: justify;
-    padding: 0 30px;  /* i dont think this does much or what i need */
+    padding: 10px 30px;  /* i dont think this does much or what i need */
     text-indent: 4rem;
+    line-height: 2rem;
 }
 
 .article-content::first-letter {
@@ -98,7 +105,7 @@
 
 .author-heading {
     text-transform: capitalize;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .author-image-block {
@@ -108,9 +115,9 @@
 }
 
 .author-image-block .author-pic {
-    width: 200px;
+    width: 250px;
     border-radius: 50%;
-    margin: calc(50% - 100px);
+    margin: calc(50% - 125px);
 }
 
 .author-name {
@@ -139,7 +146,100 @@
     margin: 5px;
 }
 
+.subscription {
+    grid-area: sub;
+}
+
+.sub-form {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    /* width: calc(100vw -1000px); */
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    background-color: #444;
+}
+
+.form-heading {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 3rem;
+}
+
+.form-email>input {
+    color: #000;
+}
+
+.form-feedback {
+    display: block;
+}
+
+textarea {
+    color: #000;
+}
+
+.form-btn {
+    width: 100px;
+    color: #000;
+}
+
+.sub-form>:nth-child(n) {
+    margin: 10px;
+}
+
+.form-email input {
+    width: 400px;
+}
+
 .foot {
     grid-area: ft;
     border-top: 1px solid #fff;
+}
+
+@media screen and (max-width: 974px) {
+    .heading {
+        font-size: 3rem;
+    }
+
+    .pic-description {
+        font-size: 1.1rem;
+    }
+
+    .author-image-block .author-pic {
+        width: 150px;
+        margin: calc(50% - 75px);
+    }
+
+    .author-heading {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .author-name,
+    .author-title,
+    .author-company {
+        font-size: 1.5rem;
+    }
+
+    .author-bio {
+        font-size: 0.7rem;
+    }
+
+    .article-content{
+        font-size: 1rem;
+    }
+
+    /* .main-links>ul>li {
+        padding: 2px;
+    } */
+
+    .main-links .fa-solid {
+        padding: 5px 5px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
 }
