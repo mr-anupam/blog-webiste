@@ -13,7 +13,7 @@
 .container {
     display: grid;
     grid-template-columns: 5vw 2fr 1fr 5vw;
-    grid-template-rows: auto auto auto uato auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas: 
         "navi navi navi navi"
         ". arti auth ."
@@ -204,12 +204,12 @@ textarea {
     }
 
     .pic-description {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .author-image-block .author-pic {
-        width: 150px;
-        margin: calc(50% - 75px);
+        width: 70%;
+        margin: calc(50% - 35%);
     }
 
     .author-heading {
@@ -240,6 +240,53 @@ textarea {
     }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 500px) {
 
+    .navigation-bar {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+    }
+
+    .main-links>ul {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "navi"
+        "arti"
+        "auth"
+        "sub"
+        "ft";
+        background-color: #000;
+    }
+
+    .content {
+        background-color: #000;
+        margin-bottom: 0px;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .aside-block {
+        background-color: #000;
+    }
+
+    .author-heading {
+        text-transform: capitalize;
+        font-size: 3rem;
+    }
+
+    .subscription {
+        background-color: #000;
+    }
 }
