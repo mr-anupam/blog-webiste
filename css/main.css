@@ -204,10 +204,14 @@
 .content .card-btn {
     padding: 5px;
     margin: auto;
+    cursor: pointer;
+}
+
+.content .card-btn a {
     color: #000;
     text-transform: capitalize;
     font-weight: bold;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .content .card-btn:hover {
