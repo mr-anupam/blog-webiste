@@ -6,8 +6,6 @@
     margin: 0;
     box-sizing: border-box;
     color: #fff;
-    /* background: #000; */
-    /* border: 1px solid #fff; */
 }
 
 .container {
@@ -53,7 +51,7 @@
     border: 1px solid #fff;
 }
 
-.spiderman-pic {
+.topic-pic {
     width: 100%;
 }
 
@@ -106,10 +104,10 @@
 .author-heading {
     text-transform: capitalize;
     font-size: 3.5rem;
+    font-family: 'Libre Bodoni', serif;
 }
 
 .author-image-block {
-    /* margin: 5% 25%; */
     border-radius: 15px;
     background: linear-gradient(#46d,#b6b);
 }
@@ -157,7 +155,6 @@
     flex-direction: column;
     border: 2px solid #fff;
     border-radius: 15px;
-    /* width: calc(100vw -1000px); */
     justify-content: center;
     align-content: center;
     padding: 5px;
@@ -231,10 +228,6 @@ textarea {
     .article-content{
         font-size: 1rem;
     }
-
-    /* .main-links>ul>li {
-        padding: 2px;
-    } */
 
     .main-links .fa-solid {
         padding: 5px 5px;

@@ -36,6 +36,7 @@
 .foot-links li a {
     text-decoration: none;
     text-transform: capitalize;
+    font-size: 1rem;
 }
 
 .company {

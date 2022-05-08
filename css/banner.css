@@ -1,0 +1,82 @@
+.banner {
+    width: 100vw;
+    height: 90vh;
+    background: url(../images/banner3.jpg) center/cover;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 5fr 5rem 7rem;
+    grid-template-rows: 5vh 45vh 5vh 10vh 25vh;
+    grid-template-areas:
+        ". . . . name"
+        ". . heading . name"
+        ". . . . name"
+        ". . searching . name"
+        ". . . . name";
+}
+
+.website-name {
+    background: #000;
+    opacity: 0.8;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    width: 7rem;
+    height: inherit;
+    text-transform: uppercase;
+    font-size: 8vh;
+    font-weight: bold;
+    border: 1px solid #fa0;
+    grid-area: name;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.banner-heading {
+    background: #000;
+    opacity: 0.8;
+    text-align: center;
+    font-family: 'libre bodoni', serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 3.5rem;
+    grid-area: heading;
+    border: 0.1rem solid #fa0;
+    padding: 2%;
+    color: #fa0;
+    overflow: hidden;
+}
+
+.search-tool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: searching;
+    background-color: #222;
+    height: 5rem;
+    border-radius: 45px;
+}
+
+.search-text {
+    width: 80%;
+    line-height: 40px;
+    border-radius: 45px 0 0 45px;
+    color: #000;
+    padding-left: 0.5rem;
+    font-size: large;
+    color: #000;
+}
+
+.search-btn {
+    width: 3.5rem;
+    line-height: 40px;
+    border-radius: 0 45px 45px 0;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.search-btn .fa-solid {
+    font-size: 15px;
+}
+
+.search-btn:hover {
+    background-color: #ffaa00;
+    transition: 0.3s linear;
+}

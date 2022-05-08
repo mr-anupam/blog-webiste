@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url("navigation-bar.css");
+@import url("footer.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.heading-1 {
+    background: #ffe;
+    color: black;
+    font-family: 'Libre Bodoni', serif;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.container {
+    background: #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "navi"
+        "hd"
+        "mini-cont"
+        "foo";
+}
+
+.container>* {
+    border: 1px solid #fff;
+}
+
+.navigation-bar {
+    grid-area: navi;
+}
+
+.heading-1 {
+    grid-area: hd;
+    font-family: 'Libre Bodoni', serif;
+    text-transform: uppercase;
+    font-size: 8vw;
+    letter-spacing: 1rem;
+}
+
+.mini-container {
+    grid-area: mini-cont;
+    padding: 20px;
+    background: #000;
+}
+
+.mini-post {
+    display: grid;
+    grid-template-columns: auto 20vw auto;
+    grid-template-rows: 1.5fr 5fr 1fr 1fr;
+    grid-template-areas: 
+        "image  mv-name mv-name"
+        "image  mv-cont mv-cont"
+        "image  ath ath"
+        "image  btn .";
+    margin: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.mini-post * {
+    margin: 10px;
+}
+
+.mini-post>figure {
+    grid-area: image;
+    display: flex;
+    align-items: center;
+}
+
+.mini-post>h2 {
+    grid-area: mv-name;
+    font-size: 4vw;
+    text-transform: capitalize;
+    font-family: 'Libre Bodoni', serif;
+}
+
+.mini-post>p {
+    grid-area: mv-cont;
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 1rem;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.mini-post>h3 {
+    grid-area: ath;
+    font-size: 2.5vw;
+    text-align: right;
+    font-style: italic;
+}
+
+.image {
+    width: 100%;
+}
+
+.mini-btn {
+    border-radius: 5px;
+    grid-area: btn;
+}
+
+.mini-btn>a {
+    color: #000;
+    font-size: 2.5vw;
+    font-family: 'Libre Bodoni', serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mini-btn:hover {
+    box-shadow: 0 5px 5px #0fa;
+    transform: scale(1.1);
+    transition: 0.4s ease-out;
+}
+
+.foot {
+    grid-area: foo;
+}
+
+@media screen and (max-width: 870px) {
+    .mini-post>p {
+        font-size: 2.7vw;
+        text-align: justify;
+    }
+
+    .mini-post>h2 {
+        font-size: 3.7vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navigation-bar{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-links>ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mini-post {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "image image image"
+            "mv-name mv-name mv-name"
+            "mv-cont mv-cont mv-cont"
+            "ath ath ath"
+            ". btn .";
+    }
+
+    .mini-post>p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .mini-post>h2 {
+        font-size: 2rem;
+    }
+
+    .mini-post>h3 {
+        font-size: 1.1rem;
+    }
+
+    .mini-btn {
+        width: 125px;
+        line-height: 2rem;
+    }
+
+    .mini-btn>a {
+        font-size: 1rem;
+    }
+}
