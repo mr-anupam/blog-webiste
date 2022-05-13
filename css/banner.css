@@ -33,15 +33,18 @@
     background: #000;
     opacity: 0.8;
     text-align: center;
-    font-family: 'libre bodoni', serif;
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size: 3.5rem;
     grid-area: heading;
     border: 0.1rem solid #fa0;
     padding: 2%;
-    color: #fa0;
     overflow: hidden;
+}
+
+.banner-heading q {
+    font-family: 'libre bodoni', serif;
+text-transform: capitalize;
+font-weight: bold;
+font-size: 3.5rem;
+color: #fa0;
 }
 
 .search-tool {

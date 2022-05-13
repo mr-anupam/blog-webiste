@@ -127,10 +127,13 @@
 
 @media screen and (max-width: 712px){
     .banner-heading {
-        font-size: 1.5rem;
-        line-height: 2rem;
         width: fit-content;
         height: fit-content;
+    }
+
+    .banner-heading q {
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     .blogs {
@@ -196,7 +199,7 @@
         display: none;
     }
 
-    .banner-heading {
+    .banner-heading>q {
         font-size: small;
     }
 }
