@@ -15,7 +15,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100vw;
     grid-template-rows: auto auto auto;
 }
 
@@ -69,7 +69,7 @@
     }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 500px) {
     .about-heading {
         font-size: 2.7rem;
     }
